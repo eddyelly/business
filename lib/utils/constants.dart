@@ -1,15 +1,18 @@
 class AppConstants {
   // Supabase Configuration
   // Note: These are public anon keys safe for client-side use
-  // For production, consider using environment variables
-  static const String supabaseUrl = String.fromEnvironment(
-    'SUPABASE_URL',
-    defaultValue: 'https://zwryvimigxwxybzvxotl.supabase.co',
-  );
-  static const String supabaseAnonKey = String.fromEnvironment(
-    'SUPABASE_ANON_KEY',
-    defaultValue: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp3cnl2aW1pZ3h3eHlienZ4b3RsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAzNjI4OTYsImV4cCI6MjA2NTkzODg5Nn0.SIqSp2yHKLrAA_LfNhl4KhBsXTOHu2ZP7zrD-yMb6Yk',
-  );
+  static const String supabaseUrl = 'https://zwryvimigxwxybzvxotl.supabase.co';
+  static const String supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp3cnl2aW1pZ3h3eHlienZ4b3RsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAzNjI4OTYsImV4cCI6MjA2NTkzODg5Nn0.SIqSp2yHKLrAA_LfNhl4KhBsXTOHu2ZP7zrD-yMb6Yk';
+  
+  // Alternative: Use environment variables for production (commented out)
+  // static const String supabaseUrl = String.fromEnvironment(
+  //   'SUPABASE_URL',
+  //   defaultValue: 'https://zwryvimigxwxybzvxotl.supabase.co',
+  // );
+  // static const String supabaseAnonKey = String.fromEnvironment(
+  //   'SUPABASE_ANON_KEY',
+  //   defaultValue: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp3cnl2aW1pZ3h3eHlienZ4b3RsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAzNjI4OTYsImV4cCI6MjA2NTkzODg5Nn0.SIqSp2yHKLrAA_LfNhl4KhBsXTOHu2ZP7zrD-yMb6Yk',
+  // );
   
   // Database Tables
   static const String feedbackTable = 'feedback';
